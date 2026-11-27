@@ -29,6 +29,11 @@ CI runs the same two commands. Never weaken a gate to make a skill pass.
   - Edit `version` in `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json`. Keep both equal.
   - Use SemVer: patch for fixes and wording, minor for a new skill or agent, major for a rename, removal or breaking behavior change.
   - Bump once per pull request, in the same commit as the skill change.
+- Bump the skill version on every contribution to that skill. Edit `metadata.version` in its `SKILL.md` frontmatter.
+  - Every skill carries `metadata:` then `version: "MAJOR.MINOR.PATCH"`. New skills start at `"1.0.0"`.
+  - Use SemVer per skill: patch for fixes and wording, minor for new content or capability, major for a changed trigger, output format or breaking behavior.
+  - Touch several skills: bump each one touched, and bump the plugin version once.
+  - Skill bump and plugin bump ship in the same commit.
 
 ## Glossary
 

@@ -15,6 +15,8 @@ Thanks for adding a skill. Keep each skill small, specific and reusable by any e
 
 - Frontmatter has `name` and `description`.
 - `name` is kebab-case and equals the folder name.
+- `metadata.version` holds the skill's SemVer, starting at `"1.0.0"`. Bump it on every change to the skill.
+- Bump `version` in `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` too, so users receive the update.
 - `description` says what the skill does and when to trigger it. Max 1024 characters.
 - Write imperative sentences, verb first. One idea per bullet.
 - Keep `SKILL.md` under 500 lines. Move long material to sibling files and link them.

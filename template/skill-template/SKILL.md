@@ -1,6 +1,8 @@
 ---
 name: skill-template
 description: Template for a new event-organizer skill. Copy this folder to skills/<your-skill-name>/ and rewrite. Use when a contributor asks how a skill in this repo is structured.
+metadata:
+  version: "1.0.0"
 ---
 
 # Skill title
