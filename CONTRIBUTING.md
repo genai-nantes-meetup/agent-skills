@@ -5,11 +5,20 @@ Thanks for adding a skill. Keep each skill small, specific and reusable by any e
 ## Add a skill
 
 1. Fork the repo and create a branch: `feat/<skill-name>`.
-2. Copy `template/skill-template/` to `skills/<skill-name>/`.
-3. Edit `SKILL.md`.
-4. Run `scripts/validate-skills.sh`. It must print `✅`.
-5. Add a row to the table in `README.md`.
-6. Open a pull request. Use a Conventional Commits title: `feat(skills): add venue-scouting`.
+2. Create `skills/<skill-name>/SKILL.md` starting with this frontmatter, then the instructions:
+
+   ```markdown
+   ---
+   name: <skill-name>
+   description: What the skill does and when to trigger it.
+   metadata:
+     version: "1.0.0"
+   ---
+   ```
+
+3. Run `scripts/validate-skills.sh`. It must print `✅`.
+4. Add a row to the table in `README.md`.
+5. Open a pull request. Use a Conventional Commits title: `feat(skills): add venue-scouting`.
 
 ## SKILL.md rules
 

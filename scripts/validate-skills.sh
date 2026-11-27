@@ -26,7 +26,7 @@ frontmatter_value() {
   ' "$file"
 }
 
-for dir in "$ROOT"/skills/*/ "$ROOT"/template/*/; do
+for dir in "$ROOT"/skills/*/; do
   [ -d "$dir" ] || continue
   dir="${dir%/}"
   dir_name="$(basename "$dir")"

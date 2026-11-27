@@ -5,7 +5,6 @@ Repo of open-source agent skills for event organizers. Read by Codex, Claude Cod
 ## Layout
 
 - `skills/<name>/SKILL.md`: one folder per skill. Frontmatter `name` equals folder name.
-- `template/skill-template/`: copy-me starter. Never place it under `skills/`: the plugin would ship it.
 - `.claude-plugin/`: Claude plugin marketplace and plugin manifest. Skills load from `skills/`.
 - `scripts/validate-skills.sh`: gate for skill structure.
 - `scripts/package-chatgpt.sh`: build `dist/<name>.zip` for ChatGPT upload. `dist/` is gitignored.

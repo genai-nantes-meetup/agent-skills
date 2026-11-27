@@ -4,17 +4,6 @@ Open-source agent skills for people who organize meetups, conferences, hackathon
 
 Built and maintained by Naomakers. Works with **Claude** (Claude Code, Claude.ai), **OpenAI Codex** and **ChatGPT**.
 
-## What is a skill?
-
-A skill is a folder with a `SKILL.md` file: a short description plus instructions an AI agent loads when the task matches. Claude, Codex and ChatGPT all read the same open format, so each skill is written once.
-
-```
-skills/
-└── <skill-name>/
-    ├── SKILL.md        required: frontmatter (name, description) + instructions
-    └── ...             optional: reference docs, templates, scripts
-```
-
 ## Install
 
 ### Claude Code (plugin marketplace)
@@ -24,7 +13,15 @@ skills/
 /plugin install event-organizer-skills@naomakers-event-skills
 ```
 
-### Claude Code or Claude.ai (manual)
+### Claude.ai and Cowork (plugin marketplace)
+
+1. Open Customize, then Plugins, then Add marketplace.
+2. Enter `genai-nantes-meetup/agent-skills`.
+3. Select the `event-organizer-skills` plugin and click Install.
+
+The plugin is saved to your account: its skills work in chat and in Claude Code. Team and Enterprise owners can sync the repo for the whole organization in Organization settings, Plugins & skills. See the [Claude plugin docs](https://claude.com/docs/cowork/guide/plugins).
+
+### Manual install (single skill)
 
 - Claude Code: copy a skill folder into `~/.claude/skills/` (all projects) or `.claude/skills/` (one project).
 - Claude.ai: run `scripts/package-chatgpt.sh <skill-name>`, then upload `dist/<skill-name>.zip` in Settings, Capabilities, Skills.
@@ -50,10 +47,9 @@ Upload menus change often. Check OpenAI's current skills documentation if a labe
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md). Short version:
 
-1. Copy `template/skill-template/` to `skills/<your-skill-name>/`.
-2. Rewrite `SKILL.md`.
-3. Run `scripts/validate-skills.sh`.
-4. Open a pull request.
+1. Create `skills/<your-skill-name>/SKILL.md`.
+2. Run `scripts/validate-skills.sh`.
+3. Open a pull request.
 
 ## Safety
 
