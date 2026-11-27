@@ -10,14 +10,14 @@ Built and maintained by Naomakers. Works with **Claude** (Claude Code, Claude.ai
 
 ```
 /plugin marketplace add genai-nantes-meetup/agent-skills
-/plugin install event-organizer-skills@naomakers-event-skills
+/plugin install naomakers-skills@naomakers-event-skills
 ```
 
 ### Claude.ai and Cowork (plugin marketplace)
 
 1. Open Customize, then Plugins, then Add marketplace.
 2. Enter `genai-nantes-meetup/agent-skills`.
-3. Select the `event-organizer-skills` plugin and click Install.
+3. Select the `naomakers-skills` plugin and click Install.
 
 The plugin is saved to your account: its skills work in chat and in Claude Code. Team and Enterprise owners can sync the repo for the whole organization in Organization settings, Plugins & skills. See the [Claude plugin docs](https://claude.com/docs/cowork/guide/plugins).
 

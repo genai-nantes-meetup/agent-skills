@@ -8,10 +8,10 @@
   },
   "plugins": [
     {
-      "name": "event-organizer-skills",
+      "name": "naomakers-skills",
       "source": "./",
       "description": "Agent skills for event organizers: planning, speakers, sponsors, logistics, communication.",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "license": "MIT"
     }
   ]
