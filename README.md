@@ -10,7 +10,7 @@ Built and maintained by Naomakers. Works with **Claude** (Claude Code, Claude.ai
 
 ```
 /plugin marketplace add genai-nantes-meetup/agent-skills
-/plugin install naomakers-skills@naomakers-event-skills
+/plugin install naomakers-skills@naomakers-skills
 ```
 
 ### Claude.ai and Cowork (plugin marketplace)
