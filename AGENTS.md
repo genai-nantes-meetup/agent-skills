@@ -25,7 +25,10 @@ CI runs the same two commands. Never weaken a gate to make a skill pass.
 - Follow `CONTRIBUTING.md` for skill content rules.
 - Never add personal data, secrets or private event details.
 - Use Conventional Commits: `<type>[(scope)]: <description>`, imperative, lowercase, no trailing period.
-- Bump `version` in `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` together when a release ships.
+- Bump the plugin version on every change to a skill or agent (add, edit, rename, remove). Claude Code caches installed plugins by version: without a bump, users never receive the update.
+  - Edit `version` in `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json`. Keep both equal.
+  - Use SemVer: patch for fixes and wording, minor for a new skill or agent, major for a rename, removal or breaking behavior change.
+  - Bump once per pull request, in the same commit as the skill change.
 
 ## Glossary
 

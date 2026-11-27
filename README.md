@@ -2,7 +2,7 @@
 
 Open-source agent skills for people who organize meetups, conferences, hackathons and community events.
 
-Maintained by the [GenAI Nantes](https://github.com/genai-nantes-meetup) community. Works with **Claude** (Claude Code, Claude.ai), **OpenAI Codex** and **ChatGPT**.
+Built and maintained by Naomakers. Works with **Claude** (Claude Code, Claude.ai), **OpenAI Codex** and **ChatGPT**.
 
 ## What is a skill?
 
@@ -21,7 +21,7 @@ skills/
 
 ```
 /plugin marketplace add genai-nantes-meetup/agent-skills
-/plugin install event-organizer-skills@genai-nantes-event-skills
+/plugin install event-organizer-skills@naomakers-event-skills
 ```
 
 ### Claude Code or Claude.ai (manual)
@@ -44,7 +44,7 @@ Upload menus change often. Check OpenAI's current skills documentation if a labe
 
 | Skill | Purpose |
 | ----- | ------- |
-| _none yet_ | Add the first one: see [CONTRIBUTING.md](CONTRIBUTING.md) |
+| [midjourney-prompt-creator](skills/midjourney-prompt-creator/SKILL.md) | Build Midjourney prompts for event visuals (poster, kakemono, banners, lanyard) in each event's fixed art direction |
 
 ## Contribute
 

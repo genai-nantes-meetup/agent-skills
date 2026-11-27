@@ -1,9 +1,9 @@
 {
   "name": "event-organizer-skills",
   "description": "Agent skills for event organizers: planning, speakers, sponsors, logistics, communication.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
-    "name": "GenAI Nantes Meetup"
+    "name": "Naomakers"
   },
   "homepage": "https://github.com/genai-nantes-meetup/agent-skills",
   "repository": "https://github.com/genai-nantes-meetup/agent-skills",
