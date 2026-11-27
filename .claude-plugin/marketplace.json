@@ -1,7 +1,7 @@
 {
-  "name": "genai-nantes-event-skills",
+  "name": "naomakers-event-skills",
   "owner": {
-    "name": "GenAI Nantes Meetup"
+    "name": "Naomakers"
   },
   "metadata": {
     "description": "Agent skills for organizing meetups, conferences and community events."
@@ -11,7 +11,7 @@
       "name": "event-organizer-skills",
       "source": "./",
       "description": "Agent skills for event organizers: planning, speakers, sponsors, logistics, communication.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "license": "MIT"
     }
   ]
